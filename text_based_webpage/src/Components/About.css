@@ -1,0 +1,14 @@
+.aboutmain {
+    margin: auto;
+    position: absolute;
+    padding: 10px;
+    display: block;
+    padding-top: 4%;
+}
+
+.aboutmain h1 {
+    text-align: center;
+    text-justify: auto;
+    font-style: italic;
+
+}

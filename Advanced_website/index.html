@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <!--------------Google fonts------------------->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <!--linking style sheet-->
+    <link rel="stylesheet" href="Css/index_style.css">
+    <!--------- Latest compiled and minified CSS ----------->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+ <body style="background-color:white;">
+ <!--Navigation bar-->
+ <div class="Nav-container">
+ <ul>
+     <li><a href="..." class="homebuttons">Home</a></li>
+     <li><a href="..." class="homebuttons">Contacts</a></li>
+     <li><a href="..." class="homebuttons">About</a></li>
+
+     <li><a href="..." class="homebuttons">News</a></li>
+     <img src="img/3-viewmode.png" class="view-3" alt="" onclick=my()>
+     <img src="img/1-viewmode.png" class="view-1" alt="" onclick=singleView()>
+     <li><a href="..." class="userbuttons">Profile</a></li>
+     <li><a href="..." class="userbuttons">Profile</a></li>
+     <li><a href="..." class="userbuttons">Settings</a></li>
+ </ul>
+ </div>
+ <!--main container that will contain the posts, tweets and friedns tabs-->
+  <div class="Main-container">
+        <ul>
+           <!--Post section-->
+            <li class="posts-container" id="posts"><div class="posts-heading">Posts <button class="postextend" onclick=singleView("posts","tweets","friends")></button></div>
+                 <ul>
+                     <li class="posts" name="i-posts" id="post1">
+                     <div class="accountprofile">
+                       <div class="buttons">
+                             <button class="buttonlike"></button>
+                             <button class="buttoncomment" onclick=openForm("post1")></button>
+                             <button class="buttonshare"></button> 
+                     </div> 
+                     <img src="https://robohash.org/1" alt="sd" class="profilepicture">
+                     <h6 class="profilename">Username <p class="post-time">4 minutes ago</p></h6> 
+                     </div>
+                     <div class="post-img">
+                     <img src="img/hiking2.jpeg" alt="">
+                     </div>
+                     <div class="caption">
+                         <ol id="post1commentlist">
+                             <li>nice</li>
+                         </ol>
+                     </div> 
+                     <div class="chat-popup" id="post1_myForm">
+  <form action="..." class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." id="post1_comment" name="msg" required></textarea>
+
+    <button type="button" class="btn" onclick=addComment("post1")>Send</button>
+    <button type="button" class="btn cancel" onclick=closeForm("post1")>Close</button>
+  </form>
+</div>
+
+                     </li>
+                        <li class="posts" name="i-posts" id="post2">
+                     <div class="accountprofile">
+                       <div class="buttons">
+                             <button class="buttonlike"></button>
+                             <button class="buttoncomment" onclick=openForm("post2")></button>
+                             <button class="buttonshare"></button> 
+                     </div> 
+                     <img src="https://robohash.org/2" alt="sd" class="profilepicture">
+                     <h6 class="profilename">Username <p class="post-time">4 minutes ago</p></h6> 
+                     </div>
+                     <div class="post-img">
+                     <img src="img/hiking2.jpeg" alt="">
+                     </div>
+                     <div class="caption">
+                         <ol id="post2commentlist">
+                             <li>nice</li>
+                         </ol>
+                     </div> 
+                     <div class="chat-popup" id="post2_myForm">
+  <form action="..." class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." id="post2_comment" name="msg" required></textarea>
+
+    <button type="button" class="btn" onclick=addComment("post2")>Send</button>
+    <button type="button" class="btn cancel" onclick=closeForm("post2")>Close</button>
+  </form>
+</div>
+
+                     </li>
+                 </ul>         
+            </li>
+            <!--tweet section-->
+            <li class="tweets-container" id="tweets"> <div class="tweets-heading">Tweets<button class="tweetsextend" onclick=singleView("tweets","posts","friends")></button></div> 
+                  <ul>
+                     <li class="tweets" name="tweets-container" id="tweet1">
+                      <div class="accountprofile">
+                              <div class="buttons">
+                             <button class="buttonlike"></button>
+                             <button class="buttoncomment"></button>
+                             <button class="buttonshare"></button> 
+                     </div> 
+                          <img src="https://robohash.org/8" alt="">
+                            <h6 class="profilename">Username <p class="post-time">4 minutes ago</p></h6> 
+                      </div>
+                      <div class="a-tweet">
+                       <p>The text-overflow property specifies how overflowed content that is not displayed should be signaled to the user. It can be clipped, display an ellipsis (...), or display a custom string.
+                       Both of the following properties are required for text-overflow:</p>
+                      </div>
+                      <div class="a-tweetbuttons">
+                      </div>            
+                     </li>
+                 </ul> 
+            </li>
+            <!--friends section-->
+            <li class="friends-container" id="friends"> <div class="friends-heading">Friends</div> 
+                <div id="myList"></div>
+            </li>
+        </ul>
+    </div>
+    <script src="Javascript/index.js"></script>
+ </body>
+</html>

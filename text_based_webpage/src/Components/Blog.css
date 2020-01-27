@@ -1,0 +1,47 @@
+.blogmain {
+    padding: 5px;
+    position: relative;
+    float: right;
+    width: 70%;
+    margin-top: 4%;
+    display: block;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.blogmain p {
+    text-align: justify;
+    text-justify: auto;
+    font-style: italic;
+    display: block;
+
+}
+
+.blogmain h1 {
+    text-align: center;
+    text-justify: auto;
+    font-style: italic;
+}
+
+.w3-panel {
+    padding: 5px;
+}
+
+.blogmain h3 {
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    float: right;
+    margin-top: -50px;
+    border-radius: 25px !important;
+
+}
+
+.date {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+
+}

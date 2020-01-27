@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tesco POS System</title>
+    <link rel="stylesheet" type="text/css" href="../src/index.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <ul>
+            <li class="section_1">
+                <div class="w3-container" id="cartList">
+                </div>
+                <div class="w3-container" id="cartInfo">
+                    <div class="cartQuantity" id="cartQuantity"></div>
+                    <div class="cartTotal" id="cartTotal"></div>
+                </div>
+                <div class="numpad-Container">
+                    <form name="numPad">
+                        <input type="text" id="displayValue" name="valueDisplay">
+                        <br><br>
+                        <input type="button" value="7" onclick="numPad.valueDisplay.value+='7'">
+                        <input type="button" value="8" onclick="numPad.valueDisplay.value+='8'">
+                        <input type="button" value="9" onclick="numPad.valueDisplay.value+='9'">
+                        <input type="button" value="<--" onclick="removeInput()">
+
+                        <br><br>
+                        <input type="button" value="4" onclick="numPad.valueDisplay.value+='4'">
+                        <input type="button" value="5" onclick="numPad.valueDisplay.value+='5'">
+                        <input type="button" value="6" onclick="numPad.valueDisplay.value+='6'">
+                        <input type="button" value="00" onclick="numPad.valueDisplay.value+='00'">
+
+                        <br><br>
+                        <input type="button" value="1" onclick="numPad.valueDisplay.value+='1'">
+                        <input type="button" value="2" onclick="numPad.valueDisplay.value+='2'">
+                        <input type="button" value="3" onclick="numPad.valueDisplay.value+='3'">
+                        <input type="button" value="0" onclick="numPad.valueDisplay.value+='0'">
+                        <input type="button" class="totalbtn" value="Enter Total" onclick="">
+
+                        <br><br>
+
+                    </form>
+                </div>
+            </li>
+            <li class="section_2">
+                <div class="w3-bar w3-border w3-round">
+                    <a href="#" id="previousbtn" class="w3-button" onclick="showPrevious()">&#10094; Previous</a>
+                    <a href="#" id="nextbtn" class="w3-button w3-right" onclick="showNext()">Next &#10095;</a>
+                </div>
+            </li>
+            <li class="section_3">
+                <div class="pagination">
+                </div>
+                <div class="w3-container" id="mainPagination">
+                    <div class="w3-panel w3-card">
+                        <p>ISB Rolls/Bagel</p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p>ISB Croi/Danish</p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p>ISB savouries</p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p>Mobile Top-up</p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p>Fast Play Lottery</p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p> Lottey Sales</p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p>Till check</p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p>Refund </p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p> Sales</p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p>Fruits</p>
+                    </div>
+                    <div class="w3-panel w3-card">
+                        <p>Vegatables</p>
+
+                    </div>
+                    <div class="w3-panel w3-card">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script language="javascript" src="scripts.js"></script>
+</body>
+
+</html>

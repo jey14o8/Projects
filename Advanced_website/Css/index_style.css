@@ -1,0 +1,359 @@
+/*nav bar styling*/
+.Nav-container{
+    width:100%;
+    background:red;
+    overflow:hidden;
+}
+.Nav-container ul{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #333;
+}
+.Nav-container ul li .homebuttons{
+ float:left;
+}
+.Nav-container ul .view-3{
+    width: 60px;
+    padding: 14px 16px;
+    float:left;
+    transform: rotate(90deg);
+}
+.Nav-container ul .view-1{
+    margin-top: 9px;
+    width: 60px;
+    padding: 14px 16px;
+    float:left;
+    transform: rotate(90deg);
+    
+}
+.Nav-container ul li .userbuttons{
+ float:right;    
+ background-color: aqua;
+}
+.Nav-container li a{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/*Main three container including the heading*/
+.Main-container{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: skyblue;
+    margin-top: ...px;
+}
+.Main-container ul{
+    padding: 0px;
+    margin: 0px;
+}
+.Main-container ul .posts-container{
+    float:left;
+    list-style: none;
+    background: red; 
+    border:2px solid blue;
+    box-sizing: border-box;
+    width:33.333%;
+    height:100vh;
+}
+.Main-container ul .tweets-container{
+    float:left;
+    list-style: none;
+    background: red; 
+    border:2px solid blue;
+    box-sizing: border-box;
+    width:33.33%;
+    height:100vh;
+}
+.Main-container ul .friends-container{
+    float:left;
+    list-style: none;
+    background: red; 
+    border:2px solid blue;
+    box-sizing: border-box;
+    width:33.333%;
+    height:100vh;
+}
+.Main-container ul li .posts-heading{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: blue;    
+    text-align: center;
+    color:white;
+    font-size: 20px;
+   
+}
+.Main-container ul li .tweets-heading{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: blue;    
+    text-align: center;
+    color:white;
+    font-size: 20px;
+   
+}
+.Main-container ul li .friends-heading{
+    width: 100%;
+    height:50px;
+    line-height: 50px;
+    background: blue;    
+    text-align: center;
+    color:white;
+    font-size: 20px;
+   
+}
+
+
+
+/*Extend buttons*/
+.Main-container ul li .posts-heading .postextend{
+  background-color: red;
+  background:url(/img/extend.png) no-repeat;
+  background-position: center;
+  background-size: 35px 35px;
+  float:right;
+  width: 6%;
+  height:28px;
+    border: none;
+}
+.Main-container ul li .tweets-heading .tweetsextend{
+  background-color: red;
+  background:url(/img/extend.png) no-repeat;
+  background-position: center;
+  background-size: 35px 35px;
+  float:right;
+  width: 6%;
+  height:28px;
+    border:none;
+}
+.Main-container ul li .friends-heading .friendsextend{
+  background-color: red;
+  background:url(/img/extend.png) no-repeat;
+  background-position: center;
+  background-size: 35px 35px;
+  float:right;
+  width: 6%;
+  height:28px;
+    border:none;
+}
+
+
+/*All scrollbar for all posts,tweets and friends container*/
+.Main-container ul  .posts-container{
+    overflow: scroll;
+}
+.Main-container ul .posts-container::-webkit-scrollbar { /* WebKit */
+  width: 0px;
+}
+.Main-container ul  .tweets-container{
+    overflow: scroll;
+}
+.Main-container ul .tweets-container::-webkit-scrollbar { /* WebKit */
+  width: 0px;
+}
+.Main-container ul  .friends-container{
+    overflow: scroll;
+}
+.Main-container ul .friends-container::-webkit-scrollbar { /* WebKit */
+  width: 0px;
+}
+.Main-container ul li .posts .caption::-webkit-scrollbar{
+     width: 0px;
+}
+
+
+
+/*Styling for individual post container*/
+.Main-container ul li .posts{
+    background-color: black;
+    width:100%;
+    height:300px;
+}
+.Main-container ul li .posts .accountprofile img{
+    width:10%;
+    height: auto;
+}
+.Main-container ul li .posts .accountprofile .profilename{
+    display:inline-block;
+    padding:1%;
+    font-size-adjust:inherit;
+    margin: 3px 0px 3px 3px; 
+}
+.Main-container ul li .posts .accountprofile button{
+    display: inline-block;
+    float:right;
+    padding:5px;
+    margin: auto;
+    width:8%;
+    height: 25px;
+    border: none;
+    
+}
+/*like button*/
+.Main-container ul li .posts .accountprofile .buttonlike{
+  background:url(/img/like.png) no-repeat;
+  background-position: center;
+    background-size: 35px 35px;
+}
+/*comment button*/
+.Main-container ul li .posts .accountprofile .buttoncomment{
+  background:url(/img/comment.png) no-repeat;
+  background-position: center;
+  background-size: 35px 35px;
+}
+/*share button*/
+.Main-container ul li .posts .accountprofile .buttonshare{
+  background:url(/img/share.png) no-repeat;
+  background-position: center;
+    background-size: 35px 35px;
+}
+.Main-container ul li .posts .accountprofile .profilename .post-time{
+    display:inline-block;
+    padding:1%;
+    font-size:60%;
+    margin: 3px 0px 3px 3px; 
+}
+.Main-container ul li .posts .post-img{
+    display:inline-block;
+    float:left;
+    padding:1%;
+    height:57%;
+    width:95%;
+    background-color: red;
+}
+.Main-container ul li .posts .post-img img{
+      display: inline-block;
+      width: 100%;
+     height: 100%;
+    
+}
+.Main-container ul li .posts .caption{
+    position: relative;
+    float:left;
+    width:100%;
+    height:18%;
+    background-color: purple;
+    padding:1px;
+    font-size: 60%;
+    word-wrap: break-word;
+    overflow: scroll;  
+}
+.Main-container ul li .posts .caption ol li{
+    
+}
+.Main-container ul li .posts  .form-container{
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+.Main-container ul li .posts .chat-popup{
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+.Main-container ul li  .posts .form-container textarea{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/*styline for individual tweet container */
+.Main-container ul li .tweets{
+    background-color: purple;
+    width:100%;
+    height:auto;
+}
+.Main-container ul li .tweets .accountprofile img{
+    width: 10%;
+    display:inline-block;
+}
+.Main-container ul li .tweets .accountprofile .profilename{
+     display:inline-block;
+    padding:1%;
+    font-size-adjust:inherit;
+    margin: 3px 0px 3px 3px; 
+}
+.Main-container ul li .tweets .accountprofile .profilename .post-time{
+    display:inline-block;
+    padding:1%;
+    font-size:60%;
+    margin: 3px 0px 3px 3px; 
+}
+/*All buttons*/
+.Main-container ul li .tweets .accountprofile button{
+    display: inline-block;
+    float:right;
+    margin:auto;
+    padding:5px;
+    width:8%;
+    height: 25px;
+    border: none;
+}
+/*like button*/
+.Main-container ul li .tweets .accountprofile .buttonlike{
+  background:url(/img/like.png) no-repeat;
+  background-position: center;
+    background-size: 35px 35px;
+}
+/*comment button*/
+.Main-container ul li .tweets .accountprofile .buttoncomment{
+  background:url(/img/comment.png) no-repeat;
+  background-position: center;
+    background-size: 35px 35px;
+}
+/*share button*/
+.Main-container ul li .tweets .accountprofile .buttonshare{
+  background:url(/img/share.png) no-repeat;
+  background-position: center;
+    background-size: 35px 35px;
+}
+.Main-container ul li .tweets .a-tweet{
+    background-color: aqua;
+    width:90%;
+    height:auto;
+    float:left;
+    display:inline-block;
+    word-wrap: break-word;
+}
+.Main-container ul li .tweets .a-tweetbuttons{
+    background-color: red;
+    width:10%;
+    display:inline-block;
+    float:left;
+}
+
+
+
+
+/*styling for individual friends container*/
+.Main-container ul li .friends{
+    background-color: bisque;
+    width:100%;
+    height:50px;
+}
+
+.Main-container ul .friends-container  .friends  img{
+    width:10%;
+    height:100%;
+    object-fit: contain;
+}
+@media screen and (max-width:1250px){
+    .Main-container ul li{
+        width:100%;
+        margin-left: 40px;
+        
+         
+    }
